@@ -1,11 +1,17 @@
 import { GetServerSideProps } from 'next';
 
-export default function page1(props: {name: string}) {
-  const name = props.name;
+interface Props {
+  name: string;
+  age: number;
+  email: string;
+}
+
+export default function page1({email, name, age}: Props) {
   return (
     <div>
-      <h1>Página 1</h1>
+      <h1>{email}</h1>
       <p><strong>Nome:</strong> {name}</p>
+      <p><strong>Idade:</strong> {age}</p>
     </div>
   )
 }
