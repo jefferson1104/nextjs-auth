@@ -9,8 +9,35 @@
   padding: 100px;
 }
 
+.loginForm button {
+  height: 36px;
+  width: 78px;
+
+  border: none;
+  cursor: pointer;
+
+  color: #242424;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+
+  transition: 0.5s;
+}
+
+.loginForm button:hover {
+  filter: brightness(0.6);
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.formGroup input {
+  height: 36px;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 5px;
 }

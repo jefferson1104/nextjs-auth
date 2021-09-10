@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+
+.loginData {
+  align-items: left;
+}
+
+.loginData strong {
+  color: #14c9cf;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.loginData p {
+  color: #c7bf4b;
+}
+
+.logout a {
+  color: #d2d2d2;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.logout a:hover {
+  color: #14c9cf;
+}

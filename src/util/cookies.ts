@@ -17,3 +17,8 @@ export function setCookie(key: string, value: string | object, options?: Cookies
     secure: process.env.NODE_ENV === 'production' ? true : false,
   });
 }
+
+// funcao para pegar cookies
+export function getCookie(key: string) {
+  return Cookies.get(key);
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,18 @@
 body {
   background: #121222;
   color: aliceblue;
+  font-family: Roboto, sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px;
+}
+
+.home h1 {
+  font-size: 48px;
 }
