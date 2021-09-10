@@ -1,10 +1,14 @@
 import { FormEvent } from 'react'
 import styles from '../styles/login.module.css'
+import { setCookie } from '../util/cookies';
 import { http } from '../util/http';
+import { useRouter } from 'next/router';
 
 export default function LoginPage() {
+  const router =  useRouter();
 
   async function onSubmit(event: FormEvent) {
+
     // evitando refresh na pagina após enviar dados do form
     event.preventDefault();
 
@@ -12,9 +16,10 @@ export default function LoginPage() {
     const username = (document.querySelector("#username") as HTMLInputElement).value;
     const password = (document.querySelector("#password") as HTMLInputElement).value;
 
-    // requisicao http
-    const data = await http.post('login', {username, password})
-    console.log(data)
+    // requisicao na api e salvando token nos cookies
+    const { data } = await http.post('login', {username, password});
+    setCookie('token', data.token);
+    router.push('/private')
   }
 
   return (
