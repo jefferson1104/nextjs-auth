@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png" width="200" alt="nextjs Logo" /></a>
+  <a href="https://nextjs.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png" width="200" alt="nextjs Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -51,11 +51,3 @@ joel3007
 
 ![screenshot](./.github/screenshot/screenshot-01.png)
 ![screenshot](./.github/screenshot/screenshot-02.png)
-
-## Licença
-
-Nest is [MIT licensed](LICENSE).
-
-```
-
-```
