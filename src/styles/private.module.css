@@ -18,6 +18,35 @@
   margin-bottom: 20px;
 }
 
+.content .homeButton {
+  background-color: #dcdde1;
+  color: #2d3436;
+}
+
+.content .logoutButton {
+  background-color: #ff5e57;
+  color: #fff;
+}
+
+.content button {
+  margin: 20px 20px 0px 0px;
+  width: 100px;
+  height: 35px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+
+  transition: 0.5s;
+}
+
+.content button:hover {
+  filter: brightness(0.6);
+}
+
 .loginData {
   align-items: left;
 }
@@ -30,14 +59,4 @@
 
 .loginData p {
   color: #c7bf4b;
-}
-
-.logout a {
-  color: #d2d2d2;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.logout a:hover {
-  color: #14c9cf;
 }

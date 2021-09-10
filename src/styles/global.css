@@ -7,8 +7,8 @@
 }
 
 body {
-  background: #121222;
-  color: aliceblue;
+  background: #1e272e;
+  color: #dcdde1;
   font-family: Roboto, sans-serif;
 }
 
@@ -23,4 +23,18 @@ body {
 
 .home h1 {
   font-size: 48px;
+}
+
+.private-link {
+  margin-top: 20px;
+
+  color: #d2d2d2;
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: color 0.5s;
+}
+
+.private-link:hover {
+  color: #14c9cf;
 }

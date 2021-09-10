@@ -1,7 +1,7 @@
 import { http } from "../util/http";
-import Link from 'next/link'
 import styles from '../styles/private.module.css'
 import { withAuth } from "../hof/withAuth";
+import { useRouter } from 'next/router';
 
 interface PayloadProps {
   name: string;
@@ -16,6 +16,15 @@ interface PrivatePagesProps {
 
 export default function PrivatePage(props: PrivatePagesProps) {
   const { name, username, email, role, loginDate } = props.payload;
+  const router =  useRouter();
+
+  function backHome () {
+    router.push('/')
+  }
+
+  function logout () {
+    router.push('/login')
+  }
   
   return (
     <div className={styles.container}>
@@ -30,10 +39,11 @@ export default function PrivatePage(props: PrivatePagesProps) {
           <p><strong>Tipo: </strong>{role}</p>
           <p><strong>Descrição: </strong>Login realizado em {loginDate}</p>
         </div>
-      </div>
 
-      <div className={styles.logout}>
-        <Link href='/login'>Clique aqui para sair</Link>
+        <div className={styles.Buttons}>
+          <button className={styles.homeButton} onClick={backHome}>Home</button>
+          <button className={styles.logoutButton} onClick={logout}>Sair</button>
+        </div>
       </div>
     </div>
   );

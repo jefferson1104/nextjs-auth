@@ -23,22 +23,25 @@ export default function LoginPage() {
   }
 
   return (
-    <div className={styles.loginContent}>
-      <form className={styles.loginForm} method="post" onSubmit={onSubmit}>
-        <h1>LOGIN</h1>
-        <br />
-        <div className={styles.formGroup}>
-          <label htmlFor="username">Usuário</label>
-          <input type="text" id="username" name="username"/>
-        </div>
+    <div className={styles.loginContainer}>
+      <div className={styles.loginContent}>
+        <form className={styles.loginForm} method="post" onSubmit={onSubmit}>
+          <h1>LOGIN</h1>
+          <br />
+          <div className={styles.formGroup}>
+            <label htmlFor="username">Usuário</label>
+            <input type="text" id="username" name="username"/>
+          </div>
 
-        <div className={styles.formGroup}>
-          <label htmlFor="password">Senha</label>
-          <input type="password" id="password" name="password"/>
-        </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="password">Senha</label>
+            <input type="password" id="password" name="password"/>
+          </div>
 
-        <button type="submit">Entrar</button>
-      </form>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
     </div>
+    
   )
 }
