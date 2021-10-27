@@ -1,45 +1,41 @@
-<p align="center">
+<div align="center">
   <a href="https://nextjs.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png" width="200" alt="nextjs Logo" /></a>
-</p>
+  <p align="center">Autenticação de usuário utilizando Next.js e API Nest.js com JWT</p>
+  <p align="center">
+    <img alt="technology" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
+    <img alt="technology" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
+    <img alt="technology" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
+  </p>
+</div>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## About this project
+Authentication project with Next.js, this project serves as an example of how to authenticate sending requests to a Nest.js API with JWT (json web token), control access routes (pages) according to user login, after log in we save the token in cookies and the user has access to a protected page for 60 seconds, when this token expires the user is redirected to the login page.
 
-<p align="center">Autenticação de usuário utilizando Next.js e API Nest.js com JWT</p>
-
-<p align="center">
-  <img alt="technology" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
-
-  <img alt="technology" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
-
-  <img alt="technology" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
-</p>
-
-## Descrição
-
-Projeto de autenticação com Next.js, esse projeto serve como exemplo de como fazer autenticação enviando requisições para uma API Nest.js com JWT (json web token), controlar o acesso de rotas (páginas) de acordo com o login do usuário, após fazer login salvamos o token nos cookies e o usuário tem acesso a uma página protegida por 60 segundos, ao expirar esse token o usuário é redirecionado para página de login.
-
-## Executar o projeto
+## Run the project
 
 ```bash
-# Clone o repositório
+# Clone front-end repository
 $ git clone https://github.com/jefferson1104/nextjs-auth.git
 
-# Clone o repositório da API
+# Clone API repository
 $ git clone https://github.com/jefferson1104/nestjs-auth.git
 
-# Execute a API (nestjs-auth) localmente
+# Run API project
+$ cd nestjs-auth
+$ code . 
 $ npm run start:dev
 
-# Execute o projeto nextjs-auth
+# Run front-end project
+$ cd nextjs-auth
+$ code . 
 $ npm run dev
 
-# Rotas
+# Routes
 /
 /login
 /private
 
-# Usuários para login
+# Users
 jefferson1104
 123456
 
